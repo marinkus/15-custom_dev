@@ -1,0 +1,67 @@
+@import url(./base.css);
+
+.container {
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.container > .content {
+    width: 800px;
+    margin-left: calc(50% - 400px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-main {
+}
+.header {
+    background-color: red;
+    width: 1200px;
+    height: 30px;
+    margin-left: calc(50% - 600px);
+    display: flex;
+}
+.header > .logo {
+}
+.header > .navbar {
+    display: flex;
+    gap: 30px;
+}
+.header > .navbar > a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+/* RESPONSIVE GOES BELLOW*/
+
+@media (max-width: 1200px) {
+.header {
+    width: 800px;
+    margin-left: calc(50% - 400px);
+}
+}
+@media (max-width: 800px) {
+.header {
+    width: 500px;
+    margin-left: calc(50% - 250px);
+}
+.content {
+    width: 500px;
+    margin-left: calc(50% - 250px);
+}
+}
+@media (max-width: 480px) {
+.header {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+.content {
+    width: auto;
+}
+}
